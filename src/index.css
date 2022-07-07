@@ -9,5 +9,6 @@
 }
 
 :root {
-    --color-gb: #1f1f38
+    --color-gb: #1f1f38;
+    --color-bg-variant: #2c2c6c;
 }

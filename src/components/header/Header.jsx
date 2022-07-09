@@ -10,6 +10,7 @@ function Header() {
         <div className="left">
           <h5>Hello I'm</h5>
           <h1>Jamie Katsamatsas</h1>
+          <p className='typeText'></p>
           <div className="socials_wrapper">
             <div className="socials_one">
               <Socials />

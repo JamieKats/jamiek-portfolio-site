@@ -1,0 +1,32 @@
+.navigation {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: var(--color-primary-variant);
+    color: var(--color-bg-variant);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.navigation a {
+    color: var(--color-bg-variant);
+    padding-right: 30px;
+}
+
+.navigation a:hover {
+    color: var(--color-white);
+}
+
+.navigation .logo {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navigation h3:first-of-type {
+    font-size: 35px;
+}

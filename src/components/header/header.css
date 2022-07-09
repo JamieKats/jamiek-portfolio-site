@@ -83,6 +83,16 @@ header {
     /* position: absolute; */
 }
 
+.typeText::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+}
+
 /* ================== MEDIA QUERIES (MEDIUM DEVICES) ========================= */
 @media screen and (max-width: 1024px) {
     .socials_one {

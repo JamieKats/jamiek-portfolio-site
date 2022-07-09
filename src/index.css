@@ -11,12 +11,13 @@
 }
 
 :root {
-    --color-bg: #1f1f38;
-    --color-bg-variant: #2c2c6c;
-    --color-primary: #4db5ff;
-    --color-primary-variant:rgba(77, 181, 255, 0.4);
+    --color-bg: #fff;
+    --color-bg-variant: #F3D849;
+    --color-primary: #00ABE1;
+    --color-primary-variant:#161F6D;
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
+    --color-dark: #1D2228;
 
     --transition: all 400ms ease;
 
@@ -36,7 +37,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     background: var(--color-bg);
-    color: var(--color-white);
+    color: var(--color-dark);
     line-height: 1.7;
     /* background-image: url(../src/assets/delaunay2.png); */
 }
@@ -83,7 +84,7 @@ a {
 }
 
 a:hover {
-    color: var(--color-white);
+    color: var(--color-primary-variant);
 }
 
 .btn {
@@ -112,4 +113,26 @@ img {
     display: block;
     width: 100%;
     object-fit: cover;
+}
+
+/* ================== MEDIA QUERIES (MEDIUM DEVICES) ========================= */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    section {
+        margin-top: 6rem;
+    } 
+}
+
+/* ================== MEDIA QUERIES (SMALL DEVICES) ========================= */
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    section {
+        margin-bottom: 2rem;
+    } 
 }
